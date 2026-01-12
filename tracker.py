@@ -128,7 +128,7 @@ def ensure_excel_file():
 # ----------------------------
 def get_amazon_data(url):
     for attempt in range(1, 4):
-        print(f"🔍 Fetching ({attempt}/3): {url}", flush=True)
+        print(f" Fetching ({attempt}/3): {url}", flush=True)
 
         delay = random.uniform(3, 6) if IS_GITHUB else random.uniform(10, 18)
         time.sleep(delay)
